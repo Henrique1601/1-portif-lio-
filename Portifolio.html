@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º Portifolio</title>
+    <style> 
+body {
+  background: #000080;
+  font-family: fantasy;
+}
+.container {
+  background: #d0d0d0;
+  color: black;
+  margin: 150px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px black;
+  padding: 54px;
+}
+.perfil-de-foto {
+  border-radius: 200px;
+  max-height: 300px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+.perfil {
+  display: flex;
+}
+.titulo-h1 {
+  margin-left: 20px;
+  font-weight: px;
+  font-size: large;
+}
+
+.projetos {
+  max-height: 700px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 32px;
+  background: #0000cd;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.projetos-titulos {
+  list-style: none;
+  font-weight: 500;
+  font-size: 36px;
+}
+.projetos-itens {
+  color: #f6f6f6;
+  list-style: none;
+  font-size: 24px;
+  font-weight: 300px;
+  line-height: 48px;
+}
+.projetos-itens a {
+  text-decoration: none;
+  color: black;
+}
+.tema button {
+  align-self: flex-self;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.dark-mode {
+  background: #1c1c1c;
+}
+.dark-mode .container {
+  background: #333439;
+  color: #f6f6f6;
+}
+
+.dark-mode .tema button {
+  color: #ffffff;
+  background: #1c1c1c;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #f7f7f7;
+}
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+          <div class="perfil">
+            <img class="perfil-de-foto" src="https://lh3.googleusercontent.com/btD7APQoO-ena01GTbMx8kcv9h8at-nFzwG-NC4cDoQzCubtpqYefgM_JbPOg5vUFuXwNGkENS9mwrX7H7CePmR9kiOAZ2FW9NTho54hPhOeEvfLRR_CUMN9-kU4NErcfS3Pka6iOFl3ADknjnO56wGggHNnW2XAHallxyZPoBtRwk11SBwvynZEtE2_KlT4d1YBRwxCsgv-bEhXNCcNtC_vJJojjLbYLeK5oHKIQjU0xh7CTl6zEnO_1W8T1HlTQmH3Om3mFCJgiFZpjKA2vnwRuqF85j55RzRZmjSkOm0Qur0UwZhLS0fLCUXAjKn246R8cyUMeZc6b8BERpqmwvlImHC4EqMXV_IoTotITbI-ZkwqL6g6lPwDx-sXAgphdNUkkH6gK5_tZGqFO4vjj_acQuSoOLHqD62B-405Cv2ndsZgtlVox3OVvGPea3ucxWdAR9HbwROmKyN8xHjDNR9_n_5yjYNoU5APQbSx_N7juoH7Xdjm3MRKx174YsXK4n8A6t-koaOQgPwolEEXwpjhsp4C9KEm2kIMG3TfXo7R7AzUFg4aiac8MLP4VsUqcuRItlx9Zj7HuxonDS2ZioLx8juuGRnUz6CoJnV_5VfazF2DnUUKprcaCcGQm8dqGpmr1Yg_pj47_qh42dhVAszzrfswotzXP-5VTTFXwOntgeFk_4SdQfE8rxOlcdifU1Oy57fpHm5nEgMGsAQo-0JF549DwHE62R0wdHD20KxCtOBdYkUe4MOgCjSlSY3mgrOBvYgaCRyLbElShfvfqiq-tWb5gOsfZNCi_lyI4VCxnpfnp5JUBha7ueLATDKCiDwfKgAujl5EIuLCuh8MPUqPXhrIhHmmWYDS36gpL30jmIvfuEFxLBjQUnRTVnyqus6kf7MMKtxeDnIP4EWV-3CfsonMEhcGgkmlUmkbQA=w672-h905-no?authuser=0" />
+    
+            <div class="titulo-h1">
+              <h1>Henrique Bezerra dos Santos</h1>
+              <h2>Iniciante na programação em front-end</h2>
+    
+            </div>
+          </div>
+          <div class="tema">
+            <button onclick="mudaTema()"> Alterar Tema</botton>
+          </div>
+    
+        </header>
+        <main class='projetos'>
+          <ul class=projetos-titulos>Projetos de Front-End</ul>
+          <li class=projetos-itens><a href= >Cartão da Nubank </A>
+          <li class=projetos-itens><a href= > Calculadora </A>
+          <li class="projetos-itens"><a href="">Tela de Login </a> 
+
+          </li>
+    
+        </main>
+      </div>
+<script>
+    function mudaTema() {
+  document.body.classList.toggle("dark-mode");
+}
+
+</script>
+</body>
+</html>
